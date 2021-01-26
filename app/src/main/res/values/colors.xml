@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/white</color>
+    <color name="colorAccent">@color/blue</color>
+    <color name="colorLoading">@color/white</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+
+
+    <color name="titleTextColor">@color/textBlackColor</color>
+    <color name="backgroundColor">#E9ECF0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="sime_white">#7FFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#438AF3</color>
+    <color name="red">#F33F0C</color>
+    <color name="divide">#eeeeee</color>
+    <color name="half_trans">#0f000000</color>
+    <color name="trans">#00000000</color>
+
+    <color name="textGrayColor">#7E91AD</color>
+    <color name="textBlackColor">#29456F</color>
+
+    <color name="black0">#00000000</color>
+    <color name="black15">#10000000</color>
+    <color name="black25">#20000000</color>
+
+
+    <color name="register_blue_color">#FF438AF3</color>
+    <color name="register_blue_shadow_color">#26000000</color>
+    <color name="backgroubdGrayColor">#FFDCE1E8</color>
+
+    <color name="bt_ok_text_color">#979797</color>
+    <color name="bt_ok_text_color_p">#5A5A5A</color>
+    <color name="color_no_select">#FFD1D8E0</color>
+
+    <color name="deviceOffline">#e9ecf0</color>
+    <color name="oneWayDeviceBtnNormalState">#F3F6FA</color>
+
+    <color name="base_title_color">#FF979797</color>
+    <color name="button_half_trans">#0f000000</color>
+    <color name="button_letter_trans">#22000000</color>
+    <color name="et_color">#FF5A5A5A</color>
+    <color name="button_red_color">#FFF4483B</color>
+</resources>

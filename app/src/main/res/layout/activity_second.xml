@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="secondmodel"
+            type="com.example.learnkotlin.xmlmodel.SecondViewModel" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:textSize="56dp"
+                android:text="@{secondmodel.name}"
+                android:gravity="center"
+                android:onClick="@{secondmodel.jumpClicklistener}"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:textSize="56dp"
+                android:text="@{secondmodel.choosePhoto}"
+                android:gravity="center"
+                android:onClick="@{secondmodel.chooseClick}"/>
+
+            <com.example.learnkotlin.view.DeviceSeekBar
+                android:id="@+id/seekBar"
+                deviceMode="@{secondmodel.deviceMode}"
+                hasPoint="@{secondmodel.hasPoint}"
+                progress="@{secondmodel.progress}"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                onCenterStatusListener="@{secondmodel.onCenterStatusClick}"
+                onLeftStatusListener="@{secondmodel.onLeftStatusClick"
+                onRightStatusListener="@{secondmodel.onRightStatusClick"
+                onOpenListener="@{secondmodel.openListener}"
+                onCloseListener="@{secondmodel.closeListener}"
+                onPauseListener="@{secondmodel.pauseListener}"
+                app:statusMode="@{secondmodel.statusMode}"
+                app:onSeekBarChanged="@{secondmodel.onSeekBarChange}"
+
+                />
+            <EditText
+                android:id="@+id/etStart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:drawableLeft="@drawable/ic_device_awning_open"
+                android:text="@={secondmodel.input}"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:id="@+id/ivPicture"
+                android:scaleType="center"
+                android:src="@mipmap/imageaaa"
+                app:imageUrl="@{secondmodel.imageUrl}"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

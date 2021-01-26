@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="mianModel"
+            type="com.example.learnkotlin.xmlmodel.MainViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".MainActivity"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_centerInParent="true">
+            <com.example.learnkotlin.view.RatioImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:background="@color/red"
+            android:layout_centerInParent="true"
+            android:src="@drawable/device10"/>
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="200dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="@dimen/textSize10"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/etText"
+            android:maxHeight="15dp"
+            android:maxWidth="15dp"
+            android:progress="@{mianModel.progress}"
+            android:max="100"
+            android:visibility="visible"
+            android:thumbOffset="5dp"
+            android:splitTrack="false"
+            android:progressDrawable="@drawable/bg_seekbar_new"
+            android:thumb="@null"
+            onSeekBarChanged="@{mianModel.seekBarChangeListener}"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/seekBar"
+            tools:listitem="@layout/item_lll"/>
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@{mianModel.textContent}"
+            android:onClick="@{mianModel.nameClick}"
+           android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/tvShow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@={mianModel.textInput}"
+            android:hint="分钟"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/tvText"/>
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="小时"
+            android:layout_centerHorizontal="true"
+            android:text="@={mianModel.hour}"
+            android:layout_above="@id/tvShow"
+ />
+        <EditText
+            android:id="@+id/etText"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:hint="11111"
+
+            />
+        <com.example.learnkotlin.view.ClockByKT
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/clock"
+            app:hourcolor="@color/red"
+            app:mimuteColor="@color/textGrayColor"
+            app:dishColor="@color/textGrayColor"
+            app:hour="@{mianModel.timeHour}"
+            app:minute="@{mianModel.timeMinute}"
+            android:onClick="@{mianModel.nameClick}"
+
+            android:layout_centerHorizontal="true"/>
+        <com.example.learnkotlin.view.TimeSelectView
+            android:id="@+id/timeSelect"
+            android:padding="10dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            app:selectHour="@{mianModel.selectHour}"
+            app:selectMinute="@{mianModel.selectMinute}"
+            app:timeSelectFontSize="18dp"
+            android:visibility="gone"
+            />
+        <com.example.learnkotlin.view.SlidingVertifyView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/red"
+            app:slideWidth="50dp"
+            app:allowableTolerance="5dp"
+            app:vertifyDrawable="@drawable/bg_color"
+            />
+
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleTextSize">18sp</dimen>
+    <dimen name="titleBarHeight">64dp</dimen>
+    <dimen name="titleBarHeight_Main">92dp</dimen>
+    <dimen name="textSizeMax">18sp</dimen>
+    <dimen name="textSizeLarge">16sp</dimen>
+    <dimen name="textSizeNor">14sp</dimen>
+    <dimen name="textSizeSmall">12sp</dimen>
+    <dimen name="textSizeMin">10sp</dimen>
+    <dimen name="textSize10">10sp</dimen>
+    <dimen name="textSizeSma13">13sp</dimen>
+    <dimen name="textSize28">28sp</dimen>
+    <dimen name="buttonHeight">42dp</dimen>
+    <dimen name="editTextHeight">64dp</dimen>
+    <dimen name="basetitme_margin_top">24dp</dimen>
+
+    <dimen name="insetShadow">1dp</dimen>
+    <dimen name="other_view_shadow">6dp</dimen>
+    <dimen name="corner_radius">10dp</dimen>
+    <dimen name="corner_radius_pic">8dp</dimen>
+    <dimen name="corner_radius_pic_small">3dp</dimen>
+    <dimen name="corner_radius_pic_roomInfo">5dp</dimen>
+    <dimen name="margin">14dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+    <dimen name="margin6">6dp</dimen>
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="margin12">12dp</dimen>
+    <dimen name="margin17">17dp</dimen>
+    <dimen name="margin14">14dp</dimen>
+    <dimen name="margin21">21dp</dimen>
+    <dimen name="margin39">39dp</dimen>
+    <dimen name="margin36">36dp</dimen>
+    <dimen name="margin24">24dp</dimen>
+    <dimen name="imageHeight">112dp</dimen>
+    <dimen name="imageSmallHeight">32dp</dimen>
+    <dimen name="itemHeight">50dp</dimen>
+
+    <!--switch button-->
+    <dimen name="switch_width">42dp</dimen>
+    <dimen name="switch_height">24dp</dimen>
+    <dimen name="switch_kswBackRadius">12dp</dimen>
+    <dimen name="switch_kswThumbHeight">16dp</dimen>
+    <dimen name="switch_kswThumbMargin">3dp</dimen>
+    <dimen name="switch_kswThumbWidth">16dp</dimen>
+
+    <dimen name="timer_when_margin_top">26dp</dimen>
+    <dimen name="time_day_size">35dp</dimen>
+    <dimen name="rb_height">32dp</dimen>
+    <dimen name="shadow_margin_top">24dp</dimen>
+    <dimen name="big_item_height">64dp</dimen>
+    <dimen name="title_height">50dp</dimen>
+    <dimen name="item_title_height">40dp</dimen>
+    <dimen name="week_selector_size">26dp</dimen>
+    <dimen name="time_item_height">88dp</dimen>
+
+    <dimen name="limin_padding_left">35dp</dimen>
+    <dimen name="limin_padding_right">36dp</dimen>
+    <dimen name="limin_padding_top">32dp</dimen>
+    <dimen name="limin_padding_bottom">64dp</dimen>
+    <dimen name="limin_step_margin_top">24dp</dimen>
+
+    <!--login activity-->
+    <dimen name="bt_signin_width">304dp</dimen>
+    <dimen name="bt_signin_height">42dp</dimen>
+    <dimen name="tv_base_margin_left">28dp</dimen>
+    <dimen name="tv_base_margin_top">32dp</dimen>
+
+    <!--device position-->
+    <dimen name="bt_small_size">56dp</dimen>
+    <dimen name="bt_large_size">72dp</dimen>
+    <dimen name="bt_margin_top">148dp</dimen>
+    <dimen name="bt_margin_left">96dp</dimen>
+    <dimen name="bt_open_margin_left">56dp</dimen>
+    <dimen name="bt_open_margin_top">140dp</dimen>
+    <dimen name="bt_close_point_margin_left">168dp</dimen>
+    <dimen name="bt_stop_margin_top">40dp</dimen>
+    <dimen name="bt_reverse_height">48dp</dimen>
+    <dimen name="choose_hub_margin_top">32dp</dimen>
+    <dimen name="btn_height">42dp</dimen>
+</resources>

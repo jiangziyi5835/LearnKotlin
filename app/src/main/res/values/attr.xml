@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<declare-styleable name="Clock">
+    <attr name="hourcolor" format="color"/>
+    <attr name="mimuteColor" format="color"/>
+    <attr name="dishColor" format="color"/>
+    <attr name="hour" format="integer"/>
+    <attr name="minute" format="integer"/>
+
+</declare-styleable>
+    <declare-styleable name="TimeSelectView">
+        <attr name="selectHour" format="integer"/>
+        <attr name="selectMinute" format="integer"/>
+        <attr name="timeSelectFontSize" format="dimension"/>
+        <attr name="hourLineColor" format="color"/>
+        <attr name="minuteLineColor" format="color"/>
+        <attr name="textColor" format="color"/>
+
+    </declare-styleable>
+    <declare-styleable name="DeviceSeekBarStyle">
+        <attr name="deviceMode">
+            <enum name="normal" value="0" />
+            <enum name="curtain" value="1" />
+            <enum name="curtainLeft" value="2" />
+            <enum name="curtainRight" value="3" />
+            <enum name="angle" value="4" />
+            <enum name="curtainWifi" value="5" />
+            <enum name="tdbu" value="6" />
+            <enum name="angleHalf" value="7" />
+        </attr>
+        <attr name="statusMode">
+            <enum name="text" value="0" />
+            <enum name="image" value="1" />
+        </attr>
+        <attr name="leftStatusDrawable" format="reference" />
+        <attr name="rightStatusDrawable" format="reference" />
+        <attr name="centerStatusDrawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SlidingVertifyView">
+        <attr name="vertifyDrawable" format="reference"/><!--背景图片-->
+        <attr name="allowableTolerance" format="dimension"/><!--滑动匹配允许的偏差-->
+        <attr name="slideWidth" format="dimension"/><!--滑块宽度-->
+        <attr name="randomPosition" format="boolean"/><!--是否随机位置-->
+    </declare-styleable>
+</resources>
